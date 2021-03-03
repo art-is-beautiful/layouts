@@ -1,0 +1,10 @@
+extend head 
+
+block content 
+    form.form(action="index.html")
+        .form__wrapper 
+            h1.form__login Reset your password 
+            section.form__section 
+                input.form__input(type="password" placeholder="New password")
+                input.form__input(type="password" placeholder="Confirm password")
+                button.form__submit.mg-top-40 Reset 

@@ -1,0 +1,9 @@
+extend head 
+
+block content 
+    form.form(action="index.html")
+        .form__wrapper
+            h1.form__login Enter your e-mail to reset your password 
+            section.form__section 
+                input.form__input(type="email" placeholder="@email")
+                button.form__submit.mg-top-40 Send
