@@ -31,6 +31,7 @@ body{
 
   &__text{
     display: inline-flex;
+    z-index: 2;
   }
   
   &__signUp{
@@ -47,7 +48,7 @@ body{
   
   &__login{
     font-family: $ffExo2;
-    @include fwfsls(600,28px,0.4px);
+    @include fwfsls(700,28px,0.4px);
     color: #002396;
     margin-bottom: 15px;
   }
@@ -112,9 +113,18 @@ body{
     font-family: $ffExo2;
     @include fwfsls(400,16px,0.24px);
   }
+
+  .ellipse{
+    @extend %pacenter;
+    z-index: -1;
+  }
 }
 
 .fl-size{
   @include fwfsls(600,50px,0.4px);
   margin-top: 23px;
+}
+
+.mx-12em{
+width: 12em;
 }

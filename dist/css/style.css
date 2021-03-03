@@ -226,7 +226,7 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
-.form, .checker {
+.form, .checker, .checker .ellipse {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -252,7 +252,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-around; }
   .header__text {
-    display: inline-flex; }
+    display: inline-flex;
+    z-index: 2; }
   .header__signUp {
     font-weight: 700;
     text-decoration: none; }
@@ -264,7 +265,7 @@ body {
   background-color: #FFFFFF; }
   .form__login {
     font-family: "Exo 2";
-    font-weight: 600;
+    font-weight: 700;
     font-size: 28px;
     letter-spacing: 0.4px;
     color: #002396;
@@ -323,9 +324,14 @@ body {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.24px; }
+  .checker .ellipse {
+    z-index: -1; }
 
 .fl-size {
   font-weight: 600;
   font-size: 50px;
   letter-spacing: 0.4px;
   margin-top: 23px; }
+
+.mx-12em {
+  width: 12em; }
