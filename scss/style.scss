@@ -1,0 +1,120 @@
+@import "reset.scss";
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "_templeates.scss";
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+  background-color: #F9FAFC;
+}
+
+// ------------------------------------------------------------- 
+
+.header{
+  font-family: $ffR;
+  @include fwfsls(400,16px,0.28px);
+
+  margin-top: 20px;
+  
+  &__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__text{
+    display: inline-flex;
+  }
+  
+  &__signUp{
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
+.form{
+  @include wh(632px,412px);
+  padding: 72px 0px 0px 116px;
+  @extend %pacenter;
+  background-color: #FFFFFF;
+  
+  &__login{
+    font-family: $ffExo2;
+    @include fwfsls(600,28px,0.4px);
+    color: #002396;
+    margin-bottom: 15px;
+  }
+
+  section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 116px;
+  }
+
+  &__input{
+    @include wh(400px,40.5px);
+    border: 2px solid #F2F2F2;
+    border-radius: 2px;
+    margin-top: 23px;
+  }
+
+  &__forgot{
+    font-family: $ffR;
+    @include fwfsls(400,12px,0.28px);
+    text-decoration: none;
+    color: black;
+
+    border: none;
+    @include wh(400px,16px);
+    margin: 13px 0px;
+    text-align: end;
+    margin: 13px 0px;
+  }
+
+  &__submit{
+    @include wh(188px,43px);
+    font-family: $ffExo2;
+    @include fwfsls(600,16px,0.4px);
+    color: #FFFFFF;
+    background-color: #0AD69C;
+  }
+}
+
+.mg-top-40{
+  margin-top: 40px;
+}
+
+.ps-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checker{
+  @include wh(700px,700px);
+  @extend %pacenter;
+  text-align: center;
+
+  &__wrapper{
+    padding: 10em 0;
+  }
+
+  &__text{
+    font-family: $ffExo2;
+    @include fwfsls(400,16px,0.24px);
+  }
+}
+
+.fl-size{
+  @include fwfsls(600,50px,0.4px);
+  margin-top: 23px;
+}
