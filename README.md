@@ -10,7 +10,7 @@ layouts db2limited
 </br>
 
 <strong>Sign Up:</strong>
-![image](https://user-images.githubusercontent.com/48654381/109951254-23361000-7ce6-11eb-94e4-47c08bacee3b.png)
+![image](https://user-images.githubusercontent.com/48654381/109951615-963f8680-7ce6-11eb-81d4-2526431f63ba.png)
 ![image](https://user-images.githubusercontent.com/48654381/109951315-35b04980-7ce6-11eb-82ff-ee31f6fed6d3.png)
 ![image](https://user-images.githubusercontent.com/48654381/109951377-4b257380-7ce6-11eb-8b1b-e5bfa602bf96.png)
 
