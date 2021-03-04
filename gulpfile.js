@@ -26,11 +26,20 @@ function template_signIn() {
       .pipe(gulp.dest('dist/signIn/'))
       .pipe(browserSync.stream());
 }
+function template_signUp() {
+  return gulp.src('./pug/signUp/*.pug')
+    .pipe(pug({
+      pretty: true
+    }))
+    .pipe(gulp.dest('dist/signUp/'))
+    .pipe(browserSync.stream());
+}
 
 async function build() {
     await style();
     await template();
     await template_signIn();
+    await template_signUp();
 }
 
 function watch() {
@@ -43,11 +52,13 @@ function watch() {
     gulp.watch('./scss/**/*.scss', style);
     gulp.watch('./pug/*.pug', template);
     gulp.watch('./pug/signIn/*.pug', template_signIn);
+    gulp.watch('./pug/signUp/*.pug', template_signUp);
 }
 
 exports.style = style;
 exports.template = template;
 exports.template_signIn = template_signIn;
+exports.template_signUp = template_signUp;
 exports.build = build;
 exports.watch = watch;
 exports.default = build;

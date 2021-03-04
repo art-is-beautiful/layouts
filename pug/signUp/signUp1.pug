@@ -1,0 +1,12 @@
+extend head
+
+block content 
+    form.formLogin.form(action="index.html")
+        h1.form__login Sign up
+        section.form__section 
+            .input__wrapper 
+                input.form__small.form__input(type="text" placeholder="Name") 
+                input.form__small.form__input(type="text" placeholder="Last name")
+            input.form__input(type="text" placeholder="Username")
+            input.form__input(type="email" placeholder="E-mail")
+            button.form__submit.mg-top-40 Get started 

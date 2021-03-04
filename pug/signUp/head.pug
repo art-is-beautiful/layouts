@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="../css/style.css")
+
+    title My pug 
+
+    script(src="https://www.google.com/recaptcha/api.js" async defer)
+body
+    header.header
+        .header__wrapper 
+            .header__logo 
+                a.header__logo-link(href="/")
+                    img(src="../svg/logo1.svg" alt="logo1")
+                    img(src="../svg/logo2.svg" alt="logo2") 
+            .header__text 
+                h2 Do not have an account? 
+                    a.header__signUp(href="#") Sign up
+    
+    block content
+        

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <title>My pug </title>
+  <script src="https://www.google.com/recaptcha/api.js" async="async" defer="defer"></script>
+</html>
+<body>
+  <header class="header">
+    <div class="header__wrapper"> 
+      <div class="header__logo"> <a class="header__logo-link" href="/"><img src="../svg/logo1.svg" alt="logo1"/><img src="../svg/logo2.svg" alt="logo2"/></a></div>
+      <div class="header__text"> 
+        <h2>Do not have an account? <a class="header__signUp" href="#">Sign up</a></h2>
+      </div>
+    </div>
+  </header>
+  <form class="form__big form" action="index.html">
+    <h1 class="form__login">Complete your account </h1>
+    <section class="form__section"> 
+      <input class="form__input" type="password" placeholder="Password"/>
+      <input class="form__input" type="password" placeholder="Confirm password"/>
+      <div class="checkbox__wrapper"> 
+        <div class="checker__label"> 
+          <input class="form__input form__box" type="checkbox" name="agree1"/>
+          <label class="label__text" for="agree1">I agree to the myFixer.com <a href="#">Terms of Service </a></label>
+        </div>
+        <div class="checker__label"> 
+          <input class="form__input form__box" type="checkbox" name="agree2"/>
+          <label class="label__text" for="agree2">I agree to the myFixer.com<a href="#">Privacy Policy</a></label>
+        </div>
+      </div>
+      <form action="index.html" method="POST">
+        <div class="g-recaptcha" data-sitekey="6Ld4QXEaAAAAAKBADEdYxA8T5EeBB7Ljk-190DjR"></div><br/>
+        <button class="form__submit mg-top-40">Done! </button>
+      </form>
+    </section>
+  </form>
+</body>

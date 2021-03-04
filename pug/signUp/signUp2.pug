@@ -1,0 +1,21 @@
+extend head 
+
+block content 
+    form.form__big.form(action="index.html")
+        h1.form__login Complete your account 
+        section.form__section 
+            input.form__input(type="password" placeholder="Password")
+            input.form__input(type="password" placeholder="Confirm password")
+            .checkbox__wrapper 
+                .checker__label 
+                    input.form__input.form__box(type="checkbox" name="agree1")
+                    label.label__text(for="agree1") I agree to the myFixer.com 
+                        a(href="#") Terms of Service 
+                .checker__label 
+                    input.form__input.form__box(type="checkbox" name="agree2")
+                    label.label__text(for="agree2") I agree to the myFixer.com
+                        a(href="#") Privacy Policy
+            form(action="index.html" method="POST")
+                .g-recaptcha(data-sitekey="6Ld4QXEaAAAAAKBADEdYxA8T5EeBB7Ljk-190DjR")
+                br
+                button.form__submit.mg-top-40 Done! 
