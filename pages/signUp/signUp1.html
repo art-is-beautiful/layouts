@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <a href="/" class="header__logo-link">
+                    <img src="../../svg/logo1.svg" alt="logo">
+                    <img src="../../svg/logo2.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header__text">
+                <h2>Already have an account? <a href="google.com" class="header__signUp"> Log in</a></h2>
+            </div>
+        </div>        
+    </header>
+    <form action="index.html" class="formLogin form">
+        <h1 class="formLogin__signUp form__login">Sign up</h1>
+        <section class="form__section">
+            <div class="input__wrapper">
+                <input type="text" class="form__small form__input" placeholder="Name">
+                <input type="text" class="form__small form__input" placeholder="Last name">
+            </div>
+            <input type="text" class="form__username form__input" placeholder="Username">
+            <input type="email" class="form__email form__input" placeholder="E-mail">
+            <button class="form__submit mg-top-40">Get started</button>
+        </section>
+    </form>
 </body>
 </html>

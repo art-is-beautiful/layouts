@@ -88,6 +88,44 @@ body{
     color: #FFFFFF;
     background-color: #0AD69C;
   }
+
+  .input__wrapper{
+    @include wh(400px, 40.5px);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+
+  &__small{
+    @include wh(190px, 40.5px);
+    // margin-left: 1.2em;
+  }
+
+}
+
+.checkbox__wrapper{
+  margin-top: 23px;
+}
+.checker__label{
+  @include wh(400px, 40.5px);
+  display: flex;
+  align-items: center;
+  border: none;
+
+  a{
+    text-decoration: none;
+  }
+
+  .form__box{
+    @include wh(24px, 22.5px);
+    margin: auto 0;
+    margin-right: .5em;
+  }
+
+  .label__text{
+    font-family: $ffR;
+    @include fwfsls(400,14px,0.28px);
+  }
 }
 
 .mg-top-40{
@@ -128,4 +166,18 @@ body{
 .mx-12em{
 width: 12em;
 margin-top: 0.9em;
+}
+
+.formLogin{
+  padding: 46px 0px 0px 116px;
+
+}
+
+.form__big{
+  @include wh(630px,595px);
+}
+
+.g-recaptcha{
+  padding-right: 6em;
+  margin-top: 23px;
 }

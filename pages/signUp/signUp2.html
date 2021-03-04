@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/css/style.css">
+    <title>Document</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <a href="/" class="header__logo-link">
+                    <img src="../../svg/logo1.svg" alt="logo">
+                    <img src="../../svg/logo2.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header__text">
+                <h2>Already have an account? <a href="google.com" class="header__signUp"> Log in</a></h2>
+            </div>
+        </div>        
+    </header>
+    <form action="index.html" class="form form__big">
+        <h1 class="formLogin__signUp form__login">Complete your account</h1>
+        <section class="form__section">
+            <input type="password" class="form__input" placeholder="Password">
+            <input type="password" class="form__input" placeholder="Confirm password">
+            <div class="checkbox__wrapper">
+                <div class="checker__label">
+                    <input type="checkbox" class="form__input form__box" name="agree1">
+                    <label for="agree1" class="label__text">I agree to the myFixer.com <a href="#">Terms of Service</a></label>
+                </div>
+                <div class="checker__label">
+                    <input type="checkbox" class="form__input form__box" name="agree2">
+                    <label for="agree2" class="label__text">I agree to the myFixer.com <a href="#">Privacy Policy</a></label>
+                </div>
+            </div>
+            <form action="index.html" method="POST">
+                <div class="g-recaptcha" data-sitekey="6Ld4QXEaAAAAAKBADEdYxA8T5EeBB7Ljk-190DjR"></div>
+                <br/>
+                <button class="form__submit mg-top-40">Done!</button>
+            </form>
+            <!-- <button class="form__submit mg-top-40">Done!</button> -->
+        </section>
+    </form>
+</body>
+</html>
