@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -226,7 +226,7 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
-.form, .checker, .checker .ellipse {
+.form, .checker, .checker .ellipse, .formProf {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -246,17 +246,46 @@ body {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.28px;
-  margin-top: 20px; }
+  width: 100%;
+  height: 61px; }
   .header__wrapper {
+    width: 80%;
+    height: 61px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; }
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%; }
   .header__text {
     display: inline-flex;
     z-index: 2; }
   .header__signUp {
     font-weight: 700;
     text-decoration: none; }
+  .header__nav-home {
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.68px;
+    text-decoration: none;
+    color: #252F48; }
+  .header .account-name {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.28px; }
+  .header #choice-header {
+    border: 0px;
+    outline: 0px;
+    background-color: #F9FAFC; }
+  .header .arrow__right {
+    color: #0AD69C;
+    width: 6px;
+    height: 8.5px;
+    margin: 0 5px; }
+
+.border-profile {
+  border: 1px solid #DAE4F2;
+  background-color: #FFFFFF;
+  z-index: 3; }
 
 .form {
   width: 632px;
@@ -358,6 +387,79 @@ body {
   .checker .ellipse {
     z-index: -1; }
 
+nav {
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  margin-top: -61px;
+  background-color: #01134E; }
+
+.formProf {
+  width: 1160px;
+  height: 572px;
+  background-color: #FFFFFF; }
+  .formProf__wrapper {
+    position: absolute;
+    width: 70%;
+    margin-left: 4%; }
+  .formProf .headerProf {
+    width: 100%;
+    height: 7em;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-bottom: 2px solid #E9E9E9;
+    padding-bottom: 1.4em; }
+    .formProf .headerProf__text {
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 0.24px;
+      color: #01134E;
+      text-decoration: none; }
+  .formProf__content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2.5em; }
+  .formProf__photo {
+    max-width: 137px; }
+  .formProf__photo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px; }
+    .formProf__photo-wrapper .photo-text {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 0.28px;
+      text-decoration: none;
+      color: black;
+      margin-left: 3px; }
+  .formProf__input {
+    width: 280px;
+    height: 40.5px;
+    border: 2px solid #F2F2F2;
+    background-color: #FCFCFC; }
+  .formProf__input-mobile {
+    width: 192px;
+    height: 40.5px;
+    border: 2px solid #F2F2F2;
+    background-color: #FCFCFC;
+    margin-left: 4px; }
+  .formProf__input-text {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #546087;
+    text-transform: uppercase;
+    margin: 29px 0 10px 0; }
+
 .fl-size {
   font-weight: 600;
   font-size: 50px;
@@ -378,3 +480,6 @@ body {
 .g-recaptcha {
   padding-right: 6em;
   margin-top: 23px; }
+
+.mg-top-0 {
+  margin-top: 0; }

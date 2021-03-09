@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --output dist/css scss",
     "watchNode": "nodemon",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "build": "webpack serve",
+    "build:prod": "webpack"
   },
   "author": "Artem Chornyi",
   "license": "ISC",
@@ -19,6 +21,11 @@
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
     "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
