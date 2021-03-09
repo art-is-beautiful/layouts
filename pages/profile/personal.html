@@ -20,20 +20,29 @@
                 </a>
             </div>
             <div class="header__text account-name">
-                <h2>Artem Chornyi 
-                    <label for="choice-header"> </label>
                     <select name="choice-header" id="choice-header">
-                      <!-- <option value="-">-</option>
+                      <option value="myaccount" selected>Artem Chornyi</option>
                       <option value="account">Account</option>
-                      <option value="settings">Settings</option> -->
+                      <option value="settings">Settings</option>
                     </select>
-                </h2>
             </div>
         </div>        
     </header>
 
-    <nav>
-
+    <nav class="nav">
+        <div class="nav__wrapper">
+            <div class="nav__logo">
+                <a href="#"> <img src="../../svg/Vector_navLogo.svg" alt=""> </a>
+            </div>
+            <div>
+            <ul class="nav__content"> 
+                <li class="nav__content-items"> <a href="#"> <img src="../../svg/Vector_navSearch.svg" alt=""> </a> </li>
+                <li class="nav__content-items"> <a href="#"> <img src="../../svg/Vector_navUser.svg" alt=""> </a> </li>
+                <li class="nav__content-items"> <a href="#"> <img src="../../svg/Vector_navMessages.svg" alt=""> </a> </li>
+                <li class="nav__content-items"> <a href="#"> <img src="../../svg/Vector_navCalendar.svg" alt=""> </a> </li>
+            </ul>
+            </div>
+        </div>
     </nav>
     
     <form action="index.html" class="formProf">
@@ -55,7 +64,7 @@
                     </div>
                 </div>
 
-                <section class="formProf__input-first">
+                <section class="">
                     <h3 class="formProf__input-text mg-top-0">First Name</h3>
                     <input type="text" class="formProf__input"/>
                     <h3 class="formProf__input-text">Title</h3>

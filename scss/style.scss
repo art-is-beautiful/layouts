@@ -53,9 +53,10 @@ body{
   }
 
   #choice-header{
+    @include wh(130px,20px);
     border:0px;
     outline:0px;
-    background-color:  #F9FAFC;
+    background-color:  #FFFFFF;
   }
 
   .arrow__right{
@@ -192,12 +193,35 @@ body{
 }
 
 
-nav {
+.nav {
   position: absolute;
   @include wh(80px,100%);
   margin-top: -61px;
-  // z-index: 2;
   background-color: #01134E;
+
+  &__wrapper{
+    @include wh(80px, 50%);
+    
+  }
+
+  &__logo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1em;
+    // margin-bottom: 7em;
+  }
+
+  &__content{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+  }
+
+  &__content-items{
+    margin-top: 3em;
+  }
 }
 
 .formProf{
@@ -268,7 +292,7 @@ nav {
     @include wh(280px,40.5px);
     border: 2px solid #F2F2F2;
     background-color: #FCFCFC;
-    // padding: 6px 6px 6px 6px;
+    padding: 6px 6px 6px 6px;
   }
   &__input-mobile{
     @include wh(192px,40.5px);
@@ -283,6 +307,30 @@ nav {
     color: #546087;
     text-transform: uppercase;
     margin: 29px 0 10px 0;
+  }
+
+  &__input-first{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__userAcc{
+    margin-top: 3em;
+    margin-right: 2em;
+  }
+
+  &__changePass{
+    @extend %pacenter;
+    font-family: $ffR;
+    @include fwfsls(500,12px,0.28px);
+    text-transform: uppercase;
+    color: #01134E;
+    text-decoration: none;
+  }
+
+  &__right-arrow{
+    margin-left: 0.5em;
   }
 }
 
