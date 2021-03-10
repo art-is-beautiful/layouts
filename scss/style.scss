@@ -3,7 +3,7 @@
 @import "_variables.scss";
 @import "_templeates.scss";
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
 html{
     box-sizing: border-box;
@@ -231,9 +231,10 @@ body{
 
   &__wrapper{
     position: absolute;
-    width: 70%;
+    width: 72%;
     margin-left: 4%;
   }
+
 
   .headerProf{
     width: 100%;
@@ -246,6 +247,7 @@ body{
     border-bottom: 2px solid #E9E9E9;
     padding-bottom: 1.4em;
 
+
     &__text{
       font-family: $ffR;
       @include fwfsls(700,16px,0.24px);
@@ -253,12 +255,18 @@ body{
       text-decoration: none;
     }
     
+    // &__wrapper{
+    //   // position: absolute;
+    //   width: 50%;
+    //   height: 7em;
+    //   border-bottom: 2px solid #2A74DB;;
+    //   padding-bottom: 1.4em;
+    //   text-align: center;
+    //   margin: auto 0;
+    //   z-index: 4;
+    // }
   }
-  // .active{
-  //   // position: relative;
-  //   border-bottom: 2px solid #2A74DB;
-  //   // width: 100px;
-  // }
+
 
   &__content-wrapper{
     display: flex;
@@ -321,17 +329,152 @@ body{
   }
 
   &__changePass{
-    @extend %pacenter;
     font-family: $ffR;
     @include fwfsls(500,12px,0.28px);
     text-transform: uppercase;
     color: #01134E;
     text-decoration: none;
+    margin: auto 0;
   }
 
   &__right-arrow{
     margin-left: 0.5em;
   }
+
+  // ---- results styles ----
+
+  &__wrapper-results{
+    position: absolute;
+    width: 90%;
+    margin-left: 4%; 
+    margin-top: 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__input-result{
+    width: 31%;
+    border-right: 1px solid #E7EAF5;
+  }
+
+  &__search-btn{
+    @include wh(280px,40.5px);
+    font-family: $ffR;
+    @include fwfsls(700,16px,0.4px);
+    color: #FFFFFF;
+    background-color: #0AD69C;
+    text-transform: uppercase;
+  }
+
+  &__header-results{
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+    // align-items: flex-end;
+  }
+
+  &__header-showMap{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+
+    text-transform: uppercase;
+  }
+
+  &__header-vector{
+    @include wh(15px,18px);
+  }
+
+  &__header-sortBy{
+    width: 190px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__checkerbox-round{
+    width: 18px;
+    height: 18px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #F0F1F3;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  &__checkerbox-round:checked{
+    width: 18px;
+    height: 18px;
+    background-color: #0AD69C;
+    border-radius: 50%;
+    content: url(../svg/Vector__checkbox_round_checked.svg);
+    border: 5px solid #F0F1F3;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  &__checkerbox-text{
+    font-family: $ffR;
+    @include fwfsls(300,14px,-0.4px);
+    color: #000000;
+  }
+
+  &__card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  &__content-card{
+    width: 330px;
+    height: 128px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(237, 237, 237, 0.2);
+    box-sizing: border-box;
+    box-shadow: -2px 9px 30px rgba(23, 31, 76, 0.02);
+    border-radius: 2px;
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+    margin-bottom: 18px;
+
+  }
+  &__card-img{
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    margin-top: 1.2em;
+    margin-left: 1.2em;
+  }
+  &__card-info{
+    width: 15em;
+    height: 8em;
+    margin-top: -4.7em;
+    margin-left: 7.3em;
+  }
+  &__card-nickname{
+    font-family: $ffR;
+    @include fwfsls(500,16px,-0.1px);
+    color: #01134E;
+    margin-bottom: 10px;
+  }
+  &__card-text{
+    font-family: $ffR;
+    @include fwfsls(300,12px,-0.046704px);
+    color: #000000;
+    margin-bottom: 7px;
+  }
+  &__card-text-main{
+    font-family: $ffR;
+    @include fwfsls(400,12px,-0.046704px);
+    color: #01134E;
+  }
+
 }
 
 
@@ -362,4 +505,12 @@ margin-top: 0.9em;
 
 .mg-top-0{
   margin-top: 0;
+}
+
+.mg-top-29{
+  margin-top: 29px;
+}
+
+.position-center{
+  @extend %pacenter;
 }

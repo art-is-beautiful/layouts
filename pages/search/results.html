@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/css/style.css">
+    <title>Document</title>
+    <script type="text/javascript">
+        function handleSelect(elm)
+        {
+           window.location = elm.value+".html";
+        }
+      </script>
+</head>
+<body>
+    <header class="header border-profile">
+        <div class="header__wrapper ">
+            <div class="header__logo">
+                <a href="/" class="header__nav-home">
+                    Home
+                </a>
+                <span class="arrow__right"> > </span>
+                <a href="/" class="header__nav-home">
+                    Search
+                </a>
+                <span class="arrow__right"> > </span>
+                <a href="/" class="header__nav-home">
+                    Results
+                </a>
+            </div>
+            <div class="header__text account-name">
+                <select name="choice-header" id="choice-header" onchange="javascript:handleSelect(this)">
+                    <option value="myaccount" selected>Artem Chornyi</option>
+                    <option value="./account">Account</option>
+                    <option value="personal">Personal</option>
+                    <option value="../duplom/coder" >Code</option>
+                  </select>
+            </div>
+        </div>        
+    </header>
+
+    <nav class="nav">
+        <div class="nav__wrapper">
+            <div class="nav__logo">
+                <a href="#"> <img src="../../svg/Vector_navLogo.svg" alt=""> </a>
+            </div>
+            <div>
+            <ul class="nav__content"> 
+                <li class="nav__content-items"> <a href="#"> <img src="../../svg/Vector_navSearch.svg" alt=""> </a> </li>
+                <li class="nav__content-items"> <a href="#"> <img src="../../svg/Vector_navUser.svg" alt=""> </a> </li>
+                <li class="nav__content-items"> <a href="#"> <img src="../../svg/Vector_navMessages.svg" alt=""> </a> </li>
+                <li class="nav__content-items"> <a href="#"> <img src="../../svg/Vector_navCalendar.svg" alt=""> </a> </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <form action="index.html" class="formProf">
+
+        <div class="formProf__wrapper-results">
+
+                <div class="formProf__input-result">
+                    <h3 class="formProf__input-text mg-top-0">Country</h3>
+                    <select name="title" class="formProf__input">
+                        <option value="ua">Ua</option>
+                        <option value="us">Us</option>
+                    </select>
+                    <h3 class="formProf__input-text">Search</h3>
+                    <input type="text" class="formProf__input"/>
+                    <h3 class="formProf__input-text">Category</h3>
+                    <select name="title" class="formProf__input">
+                        <option value="Category">Category</option>
+                        <option value="us">Us</option>
+                    </select>
+                    <h3 class="formProf__input-text">Service</h3>
+                    <select name="title" class="formProf__input">
+                        <option value="ua">uk</option>
+                        <option value="us">Us</option>
+                        <option value="3services" selected>3 Services</option>
+                    </select>
+                    <h3 class="formProf__input-text">Period</h3>
+                    <input type="text" class="formProf__input"/>
+                    <button class="formProf__search-btn mg-top-29">Search</button>
+
+                </div>
+
+                <div class="formProf__content-result">
+
+                    <header class="formProf__header-results">
+                        <div class="formProf__header-showMap">
+                            <a href="#" class="formProf__changePass">Show map</a>
+                            <img src="../../svg/Vector__results_showmap.svg" class="formProf__header-vector" alt="showMap">
+                        </div>
+                        <div class="formProf__header-sortBy">
+                            <div class="">
+                            <input type="checkbox" class="formProf__checkerbox-round" name="sortBy1">
+                            <label for="sortBy1" class="formProf__checkerbox-text">by price</label>
+                            </div>
+                            <div class="">
+                            <input type="checkbox" class="formProf__checkerbox-round" name="sortBy2">
+                            <label for="sortBy2" class="formProf__checkerbox-text">by rating</label>
+                            </div>
+                        </div>
+                    </header>
+
+                    <div class="formProf__card-wrapper">
+
+                        <section class="">
+                            <div class="formProf__content-card">
+                                <img src="../../svg/card_img_1.svg" class="formProf__card-img" alt="avatar">
+                                <section class="formProf__card-info">
+                                    <h4 class="formProf__card-nickname">Richard Thompson</h4>
+                                    <p class="formProf__card-text">Vancouver Canada</p>
+                                    <p class="formProf__card-text"><span class="formProf__card-text-main">Stack:</span>Phyton, Jango </p>
+                                    <p class="formProf__card-text"><span class="formProf__card-text-main">Base Daily Rate:</span> 1400 USD</p>
+                                </section>
+
+                            </div>
+                            <div class="formProf__content-card">
+                                <img src="../../svg/card_img_1.svg" class="formProf__card-img" alt="avatar">
+                                <section class="formProf__card-info">
+                                    <h4 class="formProf__card-nickname">Richard Thompson</h4>
+                                    <p class="formProf__card-text">Vancouver Canada</p>
+                                    <p class="formProf__card-text"><span class="formProf__card-text-main">Stack:</span>Phyton, Jango </p>
+                                    <p class="formProf__card-text"><span class="formProf__card-text-main">Base Daily Rate:</span> 1400 USD</p>
+                                </section>
+                            </div>
+                            <div class="formProf__content-card">
+                                <img src="../../svg/card_img_1.svg" class="formProf__card-img" alt="avatar">
+                                <section class="formProf__card-info">
+                                    <h4 class="formProf__card-nickname">Richard Thompson</h4>
+                                    <p class="formProf__card-text">Vancouver Canada</p>
+                                    <p class="formProf__card-text"><span class="formProf__card-text-main">Stack:</span>Phyton, Jango </p>
+                                    <p class="formProf__card-text"><span class="formProf__card-text-main">Base Daily Rate:</span> 1400 USD</p>
+                                </section>
+                            </div>
+                        </section>
+
+                        <section class="formProf__input-last">
+                            <div class="formProf__content-card">
+                                <img src="../../svg/card_img_1.svg" class="formProf__card-img" alt="avatar">
+                                <section class="formProf__card-info">
+                                    <h4 class="formProf__card-nickname">Richard Thompson</h4>
+                                    <p class="formProf__card-text">Vancouver Canada</p>
+                                    <p class="formProf__card-text"><span class="formProf__card-text-main">Stack:</span>Phyton, Jango </p>
+                                    <p class="formProf__card-text"><span class="formProf__card-text-main">Base Daily Rate:</span> 1400 USD</p>
+                                </section>
+                            </div>
+                            <div class="formProf__content-card">
+                                <img src="../../svg/card_img_1.svg" class="formProf__card-img" alt="avatar">
+                                <section class="formProf__card-info">
+                                    <h4 class="formProf__card-nickname">Richard Thompson</h4>
+                                    <p class="formProf__card-text">Vancouver Canada</p>
+                                    <p class="formProf__card-text"><span class="formProf__card-text-main">Stack:</span>Phyton, Jango </p>
+                                    <p class="formProf__card-text"><span class="formProf__card-text-main">Base Daily Rate:</span> 1400 USD</p>
+                                </section>
+                            </div>
+                            <div class="formProf__content-card">
+                                <img src="../../svg/card_img_1.svg" class="formProf__card-img" alt="avatar">
+                                <section class="formProf__card-info">
+                                    <h4 class="formProf__card-nickname">Richard Thompson</h4>
+                                    <p class="formProf__card-text">Vancouver Canada</p>
+                                    <p class="formProf__card-text"><span class="formProf__card-text-main">Stack:</span>Phyton, Jango </p>
+                                    <p class="formProf__card-text"><span class="formProf__card-text-main">Base Daily Rate:</span> 1400 USD</p>
+                                </section>
+                            </div>
+                        </section>  
+                    </div>
+                </div>   
+
+        </div>
+
+    </form>
+
+</body>
+</html>

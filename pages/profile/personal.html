@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../dist/css/style.css">
     <title>Document</title>
+    <script type="text/javascript">
+        function handleSelect(elm)
+        {
+           window.location = elm.value+".html";
+        }
+      </script>
 </head>
 <body>
     <header class="header border-profile">
@@ -20,11 +26,12 @@
                 </a>
             </div>
             <div class="header__text account-name">
-                    <select name="choice-header" id="choice-header">
-                      <option value="myaccount" selected>Artem Chornyi</option>
-                      <option value="account">Account</option>
-                      <option value="settings">Settings</option>
-                    </select>
+                <select name="choice-header" id="choice-header" onchange="javascript:handleSelect(this)">
+                    <option value="myaccount" selected>Artem Chornyi</option>
+                    <option value="./account">Account</option>
+                    <option value="personal">Personal</option>
+                    <option value="../duplom/coder" >Code</option>
+                  </select>
             </div>
         </div>        
     </header>
@@ -47,11 +54,15 @@
     
     <form action="index.html" class="formProf">
 
-        <div class="formProf__wrapper">
+        <div class="formProf__wrapper active">
 
-            <header class="headerProf active">
+            <header class="headerProf">
+                <div class="headerProf__wrapper">
                 <a href="#" class="headerProf__text">PERSONAL INFORMATION</a>
+                </div>
+                <div class="">
                 <a href="#" class="headerProf__text">ACCOUNT INFORMATION</a>
+                </div>
             </header>
 
             <div class="formProf__content-wrapper">

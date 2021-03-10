@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -226,7 +226,7 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
-.form, .checker, .checker .ellipse, .formProf, .formProf__changePass {
+.form, .checker, .checker .ellipse, .formProf, .position-center {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -417,7 +417,7 @@ body {
   background-color: #FFFFFF; }
   .formProf__wrapper {
     position: absolute;
-    width: 70%;
+    width: 72%;
     margin-left: 4%; }
   .formProf .headerProf {
     width: 100%;
@@ -491,9 +491,120 @@ body {
     letter-spacing: 0.28px;
     text-transform: uppercase;
     color: #01134E;
-    text-decoration: none; }
+    text-decoration: none;
+    margin: auto 0; }
   .formProf__right-arrow {
     margin-left: 0.5em; }
+  .formProf__wrapper-results {
+    position: absolute;
+    width: 90%;
+    margin-left: 4%;
+    margin-top: 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .formProf__input-result {
+    width: 31%;
+    border-right: 1px solid #E7EAF5; }
+  .formProf__search-btn {
+    width: 280px;
+    height: 40.5px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+    background-color: #0AD69C;
+    text-transform: uppercase; }
+  .formProf__header-results {
+    width: 680px;
+    display: flex;
+    justify-content: space-between; }
+  .formProf__header-showMap {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase; }
+  .formProf__header-vector {
+    width: 15px;
+    height: 18px; }
+  .formProf__header-sortBy {
+    width: 190px;
+    display: flex;
+    justify-content: space-around; }
+  .formProf__checkerbox-round {
+    width: 18px;
+    height: 18px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #F0F1F3;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px; }
+  .formProf__checkerbox-round:checked {
+    width: 18px;
+    height: 18px;
+    background-color: #0AD69C;
+    border-radius: 50%;
+    content: url(../svg/Vector__checkbox_round_checked.svg);
+    border: 5px solid #F0F1F3;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px; }
+  .formProf__checkerbox-text {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: -0.4px;
+    color: #000000; }
+  .formProf__card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; }
+  .formProf__content-card {
+    width: 330px;
+    height: 128px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(237, 237, 237, 0.2);
+    box-sizing: border-box;
+    box-shadow: -2px 9px 30px rgba(23, 31, 76, 0.02);
+    border-radius: 2px;
+    margin-bottom: 18px; }
+  .formProf__card-img {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    margin-top: 1.2em;
+    margin-left: 1.2em; }
+  .formProf__card-info {
+    width: 15em;
+    height: 8em;
+    margin-top: -4.7em;
+    margin-left: 7.3em; }
+  .formProf__card-nickname {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    color: #01134E;
+    margin-bottom: 10px; }
+  .formProf__card-text {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: -0.0467px;
+    color: #000000;
+    margin-bottom: 7px; }
+  .formProf__card-text-main {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.0467px;
+    color: #01134E; }
 
 .fl-size {
   font-weight: 600;
@@ -518,3 +629,6 @@ body {
 
 .mg-top-0 {
   margin-top: 0; }
+
+.mg-top-29 {
+  margin-top: 29px; }
