@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/css/style.css">
+    <title>Document</title>
+    <script type="text/javascript">
+        function handleSelect(elm)
+        {
+           window.location = elm.value+".html";
+        }
+    </script>
+</head>
+<body>
+    <header class="header border-profile">
+        <div class="header__wrapper ">
+            <div class="header__logo">
+                <a href="/" class="header__nav-home">
+                    Home
+                </a>
+                <span class="arrow__right"> > </span>
+                <a href="/" class="header__nav-home">
+                    Manage users
+                </a>
+            </div>
+            <div class="header__text account-name">
+                <select name="choice-header" id="choice-header" onchange="javascript:handleSelect(this)">
+                    <option value="myaccount" selected>Artem Chornyi</option>
+                    <option value="../profile/account">Account</option>
+                    <option value="../profile/personal">Personal</option>
+                    <option value="../duplom/coder" >Code</option>
+                  </select>
+            </div>
+        </div>        
+    </header>
+
+    <nav class="nav">
+        <div class="nav__wrapper">
+            <div class="nav__logo">
+                <a href="#"> <img src="../../svg/Vector_navLogo.svg" alt=""> </a>
+            </div>
+            <div>
+            <ul class="nav__content"> 
+                <li class="nav__content-items"> <a href="./results.html"> <img src="../../svg/Vector_navSearch.svg" alt=""> </a> </li>
+                <li class="nav__content-items"> <a href="../profile/personal.html"> <img src="../../svg/Vector_navUser.svg" alt=""> </a> </li>
+                <li class="nav__content-items"> <a href="#"> <img src="../../svg/Vector_navMessages.svg" alt=""> </a> </li>
+                <li class="nav__content-items"> <a href="#"> <img src="../../svg/Vector_navCalendar.svg" alt=""> </a> </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <form action="index.html" class="formProf">
+
+        <div class="formProf__wrapper-results">
+
+                <div class="formProf__content-admin">
+                    
+
+                    <header class="formProf__header-admin">   
+                        <button class="btn-adm-search"><img src="../../svg/Vector_admin_search.svg" alt=""></button>
+                        <input type="text" class="formProf__header-search" placeholder="Type here to search..."> 
+                    </header>
+
+                </div>  
+                
+                <section class="formProf__table">
+                    <header class="formProf__table-main bg-c-table">
+                        <p class="formProf__table-header-text">First Name</p>
+                        <p class="formProf__table-header-text">Last Name</p>
+                        <p class="formProf__table-header-text">Country</p>
+                        <p class="formProf__table-header-text">Status</p>
+                        <p class="formProf__table-header-text">Level</p>
+                        <p class="formProf__table-header-text">E-mail</p>
+                    </header>
+
+                    <div class="formProf__table-main">
+                        <p class="formProf__table-content-text">Artem</p>
+                        <p class="formProf__table-content-text">Chornyi</p>
+                        <p class="formProf__table-content-text">Ukraine</p>
+                        <p class="formProf__table-content-text">Completed</p>
+                        <!-- <p class="formProf__table-content-text">Gold</p> -->
+                        <select name="status" class="formProf__table-content-text formProf__table-content-select">
+                            <option value="trash">Trash</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold" selected>Gold</option>
+                        </select>
+                        <p class="formProf__table-content-text text-trans-lower">artem.chorniy@gmail.com</p>
+                    </div>
+
+                </section>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
