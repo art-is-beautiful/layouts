@@ -475,6 +475,19 @@ body{
     color: #01134E;
   }
 
+  // google map
+
+  #map{
+    height: 455px;
+    width: 725px;
+  }
+
+  &__googlemap{
+    position: absolute;
+    top: 8%;
+    left: 34.5%;
+  }
+
 }
 
 
@@ -514,3 +527,8 @@ margin-top: 0.9em;
 .position-center{
   @extend %pacenter;
 }
+
+.mg-top-3{
+  margin-top: 3px;
+}
+

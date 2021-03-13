@@ -605,6 +605,13 @@ body {
     font-size: 12px;
     letter-spacing: -0.0467px;
     color: #01134E; }
+  .formProf #map {
+    height: 455px;
+    width: 725px; }
+  .formProf__googlemap {
+    position: absolute;
+    top: 8%;
+    left: 34.5%; }
 
 .fl-size {
   font-weight: 600;
@@ -632,3 +639,6 @@ body {
 
 .mg-top-29 {
   margin-top: 29px; }
+
+.mg-top-3 {
+  margin-top: 3px; }
