@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <title>My pug </title>
+  <script type="text/javascript">
+    function handleSelect(elm){
+       window.location = elm.value+".html";}
+  </script>
+  <script type="text/javascript">
+    function initMap() {
+          const uluru = { lat: 40.75876747510214, lng: -73.98441503722928 }; //40.75876747510214, -73.98441503722928
+          const uluru2 = { lat: 40.689746640889965, lng: -73.99106342867998 }; //40.689746640889965, -73.99106342867998
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 8,
+            center: uluru,
+          });
+          const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+          });
+          const marker2 = new google.maps.Marker({
+            position: uluru2,
+            map: map,
+          });
+        }
+  </script>
+</html>
+<body>
+  <header class="header border-profile"> 
+    <div class="header__wrapper"> 
+      <div class="header__logo"> <a class="header__nav-home" href="/">Home </a><span class="arrow__right">></span><a class="header__nav-home" href="/">My profile</a><span class="arrow__right">></span><a class="header__nav-home" href="/">Results</a></div>
+      <div class="header__text account-name"> 
+        <select name="choice-header" id="choice-header" onchange="javascript:handleSelect(this)">
+          <option value="myaccount" selected="selected">Artem Chornyi </option>
+          <option value="./account">Account </option>
+          <option value="personal">Personal </option>
+          <option value="duplom">Code </option>
+        </select>
+      </div>
+    </div>
+  </header>
+</body>

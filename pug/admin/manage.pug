@@ -1,0 +1,29 @@
+extend head 
+    
+block content 
+    include nav
+    form.formProf(action="index.html")
+        .formProf__wrapper-results 
+            .formProf__content-admin 
+                header.formProf__header-admin 
+                    button.btn-adm-search   
+                        img(src="../svg/Vector_admin_search.svg" alt="btn-search")
+                    input.formProf__header-search(type="text" placeholder="Type here to search...")
+            section.formProf__table 
+                header.formProf__table-main.bg-c-table 
+                    p.formProf__table-header-text First Name 
+                    p.formProf__table-header-text Last Name 
+                    p.formProf__table-header-text Country 
+                    p.formProf__table-header-text Status 
+                    p.formProf__table-header-text Level 
+                    p.formProf__table-header-text E-mail 
+                .formProf__table-main 
+                    p.formProf__table-content-text Artem 
+                    p.formProf__table-content-text Chornyi 
+                    p.formProf__table-content-text Ukraine 
+                    p.formProf__table-content-text Completed 
+                    select.formProf__table-content-text.formProf__table-content-select(name="status")
+                        option(value="trash") Trash 
+                        option(value="silver") Silver 
+                        option(value="gold" selected) Gold
+                    p.formProf__table-content-text.text-trans-lower artem.chorniy@gmail.com

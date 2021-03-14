@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <title>My pug </title>
+  <script type="text/javascript">
+    function handleSelect(elm)
+    {
+       window.location = elm.value+".html";
+    }
+  </script>
+</html>
+<body>
+  <header class="header border-profile"> 
+    <div class="header__wrapper"> 
+      <div class="header__logo"> <a class="header__nav-home" href="/">Home </a><span class="arrow__right">></span><a class="header__nav-home" href="/">My profile</a></div>
+      <div class="header__text account-name"> 
+        <select name="choice-header" id="choice-header" onchange="javascript:handleSelect(this)">
+          <option value="myaccount" selected="selected">Artem Chornyi </option>
+          <option value="./account">Account </option>
+          <option value="personal">Personal </option>
+          <option value="duplom">Code </option>
+        </select>
+      </div>
+    </div>
+  </header>
+  <nav class="nav"> 
+    <div class="nav__wrapper"> 
+      <div class="nav__logo"> <a href="/"><img src="../svg/Vector_navLogo.svg" alt="src"/></a></div>
+      <div class="pugzaglushka">
+        <ul class="nav__content">
+          <li class="nav__content-items"> <a href="../search/results.html"><img src="../svg/Vector_navSearch.svg" alt=""/></a></li>
+          <li class="nav__content-items"> <a href="#"><img src="../svg/Vector_navUser.svg" alt=""/></a></li>
+          <li class="nav__content-items"> <a href="#"><img src="../svg/Vector_navMessages.svg" alt=""/></a></li>
+          <li class="nav__content-items"> <a href="#"><img src="../svg/Vector_navCalendar.svg" alt=""/></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <form class="formProf" action="index.html">
+    <div class="formProf__wrapper active"> 
+      <header class="headerProf"> 
+        <div class="headerProf__wrapper"> <a class="headerProf__text" href="#">PERSONAL INFORMATION </a></div>
+        <div class="pugzaglushka"> <a class="headerProf__text" href="./account.html">ACCOUNT INFORMATION </a></div>
+      </header>
+      <div class="formProf__content-wrapper"> 
+        <div class="formProf__photo"> <img src="../svg/avatar1.svg" alt="avatar"/>
+          <div class="formProf__photo-wrapper"> <img src="../svg/Vector_changePhoto.svg"/><a class="photo-text" href="#">Change photo </a></div>
+        </div>
+        <section class="pugzaglushka"> 
+          <h3 class="formProf__input-text mg-top-0">First Name </h3>
+          <input class="formProf__input" type="text"/>
+          <h3 class="formProf__input-text">Title </h3>
+          <select class="formProf__input" name="title">
+            <option value="mr">Mr </option>
+            <option value="smth">smth </option>
+          </select>
+          <h3 class="formProf__input-text">Country </h3>
+          <select class="formProf__input" name="country" id="selectCountry">
+            <option value="ua">ua </option>
+            <option value="uk">uk </option>
+            <option value="us">us </option>
+          </select>
+        </section>
+        <section class="formProf__input-last"> 
+          <h3 class="formProf__input-text mg-top-0">Last Name </h3>
+          <input class="formProf__input" type="text"/>
+          <h3 class="formProf__input-text">Mobile phone </h3>
+          <select class="formProf__input" name="country" id="selectCountry" style=" width: 80px;">
+            <option value="ua">ua </option>
+            <option value="us">us </option>
+            <option value="uk">uk </option>
+          </select>
+          <input class="formProf__input-mobile"/>
+          <h3 class="formProf__input-text">Company </h3>
+          <input class="formProf__input" type="text"/>
+        </section>
+      </div>
+    </div>
+  </form>
+</body>

@@ -1,0 +1,18 @@
+extend head 
+    
+block content 
+    include nav 
+    form.formProf(action="index.html")
+        .formProf__wrapper 
+            header.headerProf.active
+                a.headerProf__text(href="./personal.html") PERSONAL INFORMATION
+                a.headerProf__text(href="#") ACCOUNT INFORMATION 
+            section.formProf__input-first 
+                .formProf__userAcc 
+                    h3.formProf__input-text.mg-top-0 User Name 
+                    input.formProf__input(type="text")
+                .formProf__userAcc 
+                    h3.formProf__input-text.mg-top-0 E-mail 
+                    input.formProf__input(type="text")
+        a.formProf__changePass.position-center(href="#") Change password 
+            img.formProf__right-arrow(src="../svg/Vector_arrow_right.svg" alt="arrow")

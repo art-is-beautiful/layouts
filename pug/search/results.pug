@@ -1,0 +1,67 @@
+extend head 
+    
+block content 
+    include nav 
+    form.formProf(action="index.html")
+        .formProf__wrapper-results 
+            .formProf__input-result 
+                h3.formProf__input-text.mg-top-0 Country 
+                select.formProf__input(name="title")
+                    option(value="ua") Ua 
+                    option(value="us") Us 
+                h3.formProf__input-text Search 
+                input.formProf__input(type="text")
+                h3.formProf__input-text Category 
+                select.formProf__input(name="category")
+                    option(value="") Category 
+                    option(value="category2") Category2 
+                h3.formProf__input-text Service 
+                select.formProf__input(name="service")
+                    option(value="service1") 1 Service 
+                    option(value="service2") 2 Services
+                    option(value="service3" selected) 3 Services
+                h3.formProf__input-text Period 
+                input.formProf__input(type="text")
+                button.formProf__search-btn.mg-top-29 Search 
+            .formProf__content-result 
+                header.formProf__header-results 
+                    .formProf__header-showMap 
+                        a.formProf__changePass(href="./result-map.html") Show map
+                        img.formProf__header-vector(src="../svg/Vector__results_showmap.svg" alt="vector")
+                    .formProf__header-sortBy 
+                        .pugzaglushka 
+                            input.formProf__checkerbox-round(type="checkbox" name="sortBy1")
+                            label.formProf__checkerbox-text(for="sortBy1") by price 
+                        .pugzaglushka 
+                            input.formProf__checkerbox-round(type="checkbox" name="sortBy2")
+                            label.formProf__checkerbox-text(for="sortBy2") by rating 
+                .formProf__card-wrapper    
+                    section.pugzaglushka 
+                        .formProf__content-card 
+                            img.formProf__card-img(src="../svg/card_img_1.svg" alt="avatar")
+                            section.formProf__card-info 
+                                h3.formProf__card-nickname Richard Thompson 
+                                p.formProf__card-text Vancuver Canada 
+                                p.formProf__card-text-main Stack:  
+                                    span.formProf__card-text Phyton, Jango
+                                p.formProf__card-text-main Base Daily Rate:  
+                                    span.formProf__card-text 1300 USD
+                        .formProf__content-card 
+                            img.formProf__card-img(src="../svg/card_img_1.svg" alt="avatar")
+                            section.formProf__card-info 
+                                h3.formProf__card-nickname Richard Thompson 
+                                p.formProf__card-text Vancuver Canada 
+                                p.formProf__card-text-main Stack:  
+                                    span.formProf__card-text Phyton, Jango
+                                p.formProf__card-text-main Base Daily Rate:  
+                                    span.formProf__card-text 1300 USD
+                    section.formProf__input-last
+                        .formProf__content-card 
+                            img.formProf__card-img(src="../svg/card_img_1.svg" alt="avatar")
+                            section.formProf__card-info 
+                                h3.formProf__card-nickname Richard Thompson 
+                                p.formProf__card-text Vancuver Canada 
+                                p.formProf__card-text-main Stack:  
+                                    span.formProf__card-text Phyton, Jango
+                                p.formProf__card-text-main Base Daily Rate:  
+                                    span.formProf__card-text 1300 USD

@@ -1,0 +1,42 @@
+extend head 
+    
+block content 
+    include nav 
+    form.formProf(action="index.html")
+        .formProf__wrapper.active 
+            header.headerProf 
+                .headerProf__wrapper 
+                    a.headerProf__text(href="#") PERSONAL INFORMATION 
+                .pugzaglushka 
+                    a.headerProf__text(href="./account.html") ACCOUNT INFORMATION 
+            .formProf__content-wrapper 
+                .formProf__photo 
+                    img(src="../svg/avatar1.svg" alt="avatar")
+                    .formProf__photo-wrapper 
+                        img(src="../svg/Vector_changePhoto.svg")
+                        a.photo-text(href="#") Change photo 
+                section.pugzaglushka 
+                    h3.formProf__input-text.mg-top-0 First Name 
+                    input.formProf__input(type="text")
+                    h3.formProf__input-text Title 
+                    select.formProf__input(name="title")
+                        option(value="mr") Mr 
+                        option(value="smth") smth 
+                    h3.formProf__input-text Country 
+                    select.formProf__input(name="country" id="selectCountry")
+                        option(value="ua") ua 
+                        option(value="uk") uk 
+                        option(value="us") us 
+                section.formProf__input-last 
+                    h3.formProf__input-text.mg-top-0 Last Name 
+                    input.formProf__input(type="text")
+                    h3.formProf__input-text Mobile phone 
+                    select.formProf__input(name="country" id="selectCountry" style=' width: 80px;')
+                        option(value="ua") ua 
+                        option(value="us") us 
+                        option(value="uk") uk 
+                    input.formProf__input-mobile
+                    h3.formProf__input-text Company 
+                    input.formProf__input(type="text")
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <title>My pug </title>
+  <script type="text/javascript">
+    function handleSelect(elm){
+       window.location = elm.value+".html";}
+  </script>
+  <script type="text/javascript">
+    function initMap() {
+          const uluru = { lat: 40.75876747510214, lng: -73.98441503722928 }; //40.75876747510214, -73.98441503722928
+          const uluru2 = { lat: 40.689746640889965, lng: -73.99106342867998 }; //40.689746640889965, -73.99106342867998
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 8,
+            center: uluru,
+          });
+          const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+          });
+          const marker2 = new google.maps.Marker({
+            position: uluru2,
+            map: map,
+          });
+        }
+  </script>
+</html>
+<body>
+  <header class="header border-profile"> 
+    <div class="header__wrapper"> 
+      <div class="header__logo"> <a class="header__nav-home" href="/">Home </a><span class="arrow__right">></span><a class="header__nav-home" href="/">My profile</a><span class="arrow__right">></span><a class="header__nav-home" href="/">Results</a></div>
+      <div class="header__text account-name"> 
+        <select name="choice-header" id="choice-header" onchange="javascript:handleSelect(this)">
+          <option value="myaccount" selected="selected">Artem Chornyi </option>
+          <option value="./account">Account </option>
+          <option value="personal">Personal </option>
+          <option value="duplom">Code </option>
+        </select>
+      </div>
+    </div>
+  </header>
+  <nav class="nav"> 
+    <div class="nav__wrapper"> 
+      <div class="nav__logo"> <a href="/"><img src="../svg/Vector_navLogo.svg" alt="src"/></a></div>
+      <div class="pugzaglushka">
+        <ul class="nav__content">
+          <li class="nav__content-items"> <a href="./results.html"><img src="../svg/Vector_navSearch.svg" alt=""/></a></li>
+          <li class="nav__content-items"> <a href="../profile/personal.html"><img src="../svg/Vector_navUser.svg" alt=""/></a></li>
+          <li class="nav__content-items"> <a href="#"><img src="../svg/Vector_navMessages.svg" alt=""/></a></li>
+          <li class="nav__content-items"> <a href="#"><img src="../svg/Vector_navCalendar.svg" alt=""/></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <form class="formProf" action="index.html">
+    <div class="formProf__wrapper-results"> 
+      <div class="formProf__input-result"> 
+        <h3 class="formProf__input-text mg-top-0">Location </h3>
+        <select class="formProf__input" name="title">
+          <option value="ua">Ua </option>
+          <option value="us">Us </option>
+        </select>
+        <h3 class="formProf__input-text">Search </h3>
+        <input class="formProf__input" type="text"/>
+        <h3 class="formProf__input-text">Category </h3>
+        <select class="formProf__input" name="category">
+          <option value="">Category </option>
+          <option value="category2">Category2 </option>
+        </select>
+        <h3 class="formProf__input-text">Service </h3>
+        <select class="formProf__input" name="service">
+          <option value="service1">1 Service </option>
+          <option value="service2">2 Services</option>
+          <option value="service3" selected="selected">3 Services</option>
+        </select>
+        <h3 class="formProf__input-text">Period </h3>
+        <input class="formProf__input" type="text"/>
+        <button class="formProf__search-btn mg-top-29">Search </button>
+      </div>
+      <div class="formProf__content-result">
+        <header class="formProf__header-results"> 
+          <div class="formProf__header-showMap"> <a class="formProf__changePass mg-top-3" href="./results.html">Show results</a></div>
+        </header>
+        <div class="formProf__googlemap" id="map"></div>
+        <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=&amp;callback=initMap&amp;libraries=&amp;v=weekly"></script>
+      </div>
+    </div>
+  </form>
+</body>

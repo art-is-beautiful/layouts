@@ -1,0 +1,31 @@
+extend head 
+    
+block content 
+    include nav 
+    form.formProf(action="index.html")
+        .formProf__wrapper-results 
+            .formProf__input-result 
+                h3.formProf__input-text.mg-top-0 Location 
+                select.formProf__input(name="title")
+                    option(value="ua") Ua 
+                    option(value="us") Us 
+                h3.formProf__input-text Search 
+                input.formProf__input(type="text")
+                h3.formProf__input-text Category 
+                select.formProf__input(name="category")
+                    option(value="") Category 
+                    option(value="category2") Category2 
+                h3.formProf__input-text Service 
+                select.formProf__input(name="service")
+                    option(value="service1") 1 Service 
+                    option(value="service2") 2 Services
+                    option(value="service3" selected) 3 Services
+                h3.formProf__input-text Period 
+                input.formProf__input(type="text")
+                button.formProf__search-btn.mg-top-29 Search 
+            .formProf__content-result
+                header.formProf__header-results 
+                    .formProf__header-showMap 
+                        a.formProf__changePass.mg-top-3(href="./results.html") Show results
+                .formProf__googlemap(id="map")
+                script(async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly")

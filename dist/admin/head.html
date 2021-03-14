@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <title>My pug </title>
+  <script type="text/javascript">
+    function handleSelect(elm)
+    {
+       window.location = elm.value+".html";
+    }
+  </script>
+</html>
+<body>
+  <header class="header border-profile"> 
+    <div class="header__wrapper"> 
+      <div class="header__logo"> <a class="header__nav-home" href="/">Home </a><span class="arrow__right">></span><a class="header__nav-home" href="/">Manage users</a></div>
+      <div class="header__text account-name"> 
+        <select name="choice-header" id="choice-header" onchange="javascript:handleSelect(this)">
+          <option value="myaccount" selected="selected">Artem Chornyi </option>
+          <option value="./account">Account </option>
+          <option value="personal">Personal </option>
+          <option value="duplom">Code </option>
+        </select>
+      </div>
+    </div>
+  </header>
+</body>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <title>My pug </title>
+  <script type="text/javascript">
+    function handleSelect(elm)
+    {
+       window.location = elm.value+".html";
+    }
+  </script>
+</html>
+<body>
+  <header class="header border-profile"> 
+    <div class="header__wrapper"> 
+      <div class="header__logo"> <a class="header__nav-home" href="/">Home </a><span class="arrow__right">></span><a class="header__nav-home" href="/">Manage users</a></div>
+      <div class="header__text account-name"> 
+        <select name="choice-header" id="choice-header" onchange="javascript:handleSelect(this)">
+          <option value="myaccount" selected="selected">Artem Chornyi </option>
+          <option value="./account">Account </option>
+          <option value="personal">Personal </option>
+          <option value="duplom">Code </option>
+        </select>
+      </div>
+    </div>
+  </header>
+  <nav class="nav"> 
+    <div class="nav__wrapper"> 
+      <div class="nav__logo"> <a href="/"><img src="../svg/Vector_navLogo.svg" alt="src"/></a></div>
+      <div class="pugzaglushka">
+        <ul class="nav__content">
+          <li class="nav__content-items"> <a href="../search/results.html"><img src="../svg/Vector_navSearch.svg" alt=""/></a></li>
+          <li class="nav__content-items"> <a href="#"><img src="../svg/Vector_navUser.svg" alt=""/></a></li>
+          <li class="nav__content-items"> <a href="#"><img src="../svg/Vector_navMessages.svg" alt=""/></a></li>
+          <li class="nav__content-items"> <a href="#"><img src="../svg/Vector_navCalendar.svg" alt=""/></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <form class="formProf" action="index.html">
+    <div class="formProf__wrapper-results"> 
+      <div class="formProf__content-admin"> 
+        <header class="formProf__header-admin"> 
+          <button class="btn-adm-search">  <img src="../svg/Vector_admin_search.svg" alt="btn-search"/></button>
+          <input class="formProf__header-search" type="text" placeholder="Type here to search..."/>
+        </header>
+      </div>
+      <section class="formProf__table"> 
+        <header class="formProf__table-main bg-c-table"> 
+          <p class="formProf__table-header-text">First Name </p>
+          <p class="formProf__table-header-text">Last Name </p>
+          <p class="formProf__table-header-text">Country </p>
+          <p class="formProf__table-header-text">Status </p>
+          <p class="formProf__table-header-text">Level </p>
+          <p class="formProf__table-header-text">E-mail </p>
+        </header>
+        <div class="formProf__table-main"> 
+          <p class="formProf__table-content-text">Artem </p>
+          <p class="formProf__table-content-text">Chornyi </p>
+          <p class="formProf__table-content-text">Ukraine </p>
+          <p class="formProf__table-content-text">Completed </p>
+          <select class="formProf__table-content-text formProf__table-content-select" name="status">
+            <option value="trash">Trash </option>
+            <option value="silver">Silver </option>
+            <option value="gold" selected="selected">Gold</option>
+          </select>
+          <p class="formProf__table-content-text text-trans-lower">artem.chorniy@gmail.com</p>
+        </div>
+      </section>
+    </div>
+  </form>
+</body>

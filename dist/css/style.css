@@ -604,7 +604,8 @@ body {
     font-weight: 400;
     font-size: 12px;
     letter-spacing: -0.0467px;
-    color: #01134E; }
+    color: #01134E;
+    margin-bottom: 7px; }
   .formProf #map {
     height: 455px;
     width: 725px; }
