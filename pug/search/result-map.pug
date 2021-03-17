@@ -6,7 +6,8 @@ block content
         .formProf__wrapper-results 
             .formProf__input-result 
                 h3.formProf__input-text.mg-top-0 Location 
-                select.formProf__input(name="title")
+                select.formProf__input.formProf__input-ico(name="title")
+                    option(value="none")  
                     option(value="ua") Ua 
                     option(value="us") Us 
                 h3.formProf__input-text Search 
@@ -17,11 +18,11 @@ block content
                     option(value="category2") Category2 
                 h3.formProf__input-text Service 
                 select.formProf__input(name="service")
-                    option(value="service1") 1 Service 
+                    option(value="service1" style="background-image:url(../svg/Vector_countryPoint);") 1 Service 
                     option(value="service2") 2 Services
                     option(value="service3" selected) 3 Services
                 h3.formProf__input-text Period 
-                input.formProf__input(type="text")
+                input.formProf__input(type="date" value="2020-03-14" min="2019-01-01" max="2025-12-31")
                 button.formProf__search-btn.mg-top-29 Search 
             .formProf__content-result
                 header.formProf__header-results 

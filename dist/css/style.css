@@ -481,6 +481,21 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center; }
+  .formProf__input-data {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.28px; }
+  .formProf__input-ico {
+    background-image: url(../../svg/Vector_countryPoint.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 20px; }
+  .formProf__input-ico-mobile {
+    background-image: url(../../svg/Vector_flag1.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 20px; }
   .formProf__userAcc {
     margin-top: 3em;
     margin-right: 2em; }
@@ -563,8 +578,10 @@ body {
     color: #000000; }
   .formProf__card-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 30px; }
+    margin-top: 30px;
+    width: 700px; }
   .formProf__content-card {
     width: 330px;
     height: 128px;

@@ -323,6 +323,25 @@ body{
     align-items: center;
   }
 
+  &__input-data{
+    font-family: $ffR;
+    @include fwfsls(400,14px,0.28px);
+  }
+
+  &__input-ico{
+    background-image:url(../../svg/Vector_countryPoint.svg); 
+    background-repeat: no-repeat;
+    background-position:left;
+    padding-left: 20px;
+  }
+
+  &__input-ico-mobile{
+    background-image:url(../../svg/Vector_flag1.svg); 
+    background-repeat: no-repeat;
+    background-position:left;
+    padding-left: 20px;
+  }
+
   &__userAcc{
     margin-top: 3em;
     margin-right: 2em;
@@ -426,8 +445,10 @@ body{
 
   &__card-wrapper{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 30px;
+    width: 700px;
   }
 
   &__content-card{
