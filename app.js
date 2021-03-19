@@ -9,7 +9,7 @@ const app = new Koa();
 
 const router = new Router();
 
-const port = 3001; //process.env.PORT ||
+const port = process.env.PORT || 3001; //
 
 const render = views(path.join(__dirname, '/pug'), {
   extension: 'pug',
