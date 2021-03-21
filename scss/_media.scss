@@ -1,0 +1,134 @@
+
+@media (max-width:1200px){
+    .form{
+      @include wh(432px,460px);
+      padding: 72px 0px 0px 116px;
+      // @extend %pacenter;
+      background-color: #FFFFFF;
+    }
+    .form__login{
+      font-size: 20px;
+    }
+    .header__logo{
+      visibility: hidden;
+    }
+    .form__small{
+      @include wh(90px, 40.5px);
+    }
+    .checker__label{
+      @include wh(200px, 40.5px);
+  
+    }
+    .g-recaptcha{
+      position: relative;
+      left: 150px;
+      margin-top: 23px;
+    } 
+    .nav {
+      position: absolute;
+      @include wh(40px,100%);
+      margin-top: -61px;
+      background-color: #01134E;
+      z-index: 2;
+    }
+    .nav__logo{
+      visibility: hidden;
+    }
+    .header{
+      @include wh(100%,61px);
+      // max-width: 375px;
+    }
+    .header__wrapper{ 
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 10%;
+    }
+    // .formProf{
+    //   @include wh(900px,572px);
+    // }
+    // .formProf__input{
+    //   @include wh(200px,35.5px);
+    //   border: 2px solid #F2F2F2;
+    //   background-color: #FCFCFC;
+    //   padding: 6px 6px 6px 6px;
+    // }
+    // .formProf__search-btn{
+    //   @include wh(200px,35.5px);
+    // }
+    // .formProf__header-results{
+    //   width: 580px;
+    //   position: relative;
+    //   top:-122%;
+    //   left:38%;
+    // }
+    // .formProf__header-showMap{
+    //   width: 400px;
+    // }
+    // .formProf__card-wrapper{
+    //   position: relative;
+    //   top:-120%;
+    //   left:37%;
+    //   justify-content: space-between;
+    //   margin-top: 30px;
+    //   width: 620px;
+    // }
+    // .formProf__input-result{
+    //   width: 28%;
+    // }
+    // .formProf__content-card{
+    //   width: 280px;
+    //   height: 100px;
+    //   margin-bottom: 10px;
+    // }
+    // &__card-info{
+    //   width: 13em;
+    //   height: 6em;
+    //   margin-top: -4.7em;
+    //   margin-left: 2.3em;
+    // }
+    // #map{
+    //   width: 500px;
+    //   height: 600px;
+    // }
+    // .formProf__googlemap{
+    //   position: absolute;
+    //   top: 3%;
+    //   left: 31%;
+    // }
+  
+  }
+  
+//   @media (max-width:920px){
+//     body{
+//       background-color: #f0f3ec;
+//     }
+//     .header{
+//         visibility: hidden;
+//       }
+//     .formProf{
+//       visibility: hidden;
+//     }
+//     .nav{
+//       visibility: hidden;
+//     }
+
+//     .error-display{
+//       animation: 3s linear 1s infinite alternate error-display;
+//       visibility: visible;
+//       display: flex;
+//       flex-wrap: nowrap;
+//       // text-align: center;
+//       color: red;
+//       font-size: 90px;
+      
+//     }
+    
+//   }
+
+//   @keyframes error-display { from { margin-left:10%; } to { margin-left:80%; }  }
+  
+//   @media (max-width:1920){
+  
+//   }
+  

@@ -2,11 +2,13 @@ extend head
     
 block content 
     include nav 
+    .error-display Please, use screen > 1000px. Temporary problems
     form.formProf(action="index.html")
         .formProf__wrapper 
             header.headerProf.active
                 a.headerProf__text(href="./personal.html") PERSONAL INFORMATION
                 a.headerProf__text(href="#") ACCOUNT INFORMATION 
+                    img.headerProf__active-account(src="../svg/Active_line.svg")
             section.formProf__input-first 
                 .formProf__userAcc 
                     h3.formProf__input-text.mg-top-0 User Name 
