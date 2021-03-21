@@ -1,49 +1,53 @@
 
 @media (max-width:1200px){
     .form{
-      @include wh(432px,460px);
-      padding: 72px 0px 0px 116px;
-      // @extend %pacenter;
-      background-color: #FFFFFF;
+        max-width: 640px;
+    //   @include wh(375px,430px);
+    //   padding: 72px 0px 0px 10px;
+    //   background-color: #FFFFFF;
     }
-    .form__login{
-      font-size: 20px;
-    }
-    .header__logo{
-      visibility: hidden;
-    }
-    .form__small{
-      @include wh(90px, 40.5px);
-    }
-    .checker__label{
-      @include wh(200px, 40.5px);
+    // .header__logo{
+    //   visibility: hidden;
+    // }
+    // .form__small{
+    //   @include wh(90px, 40.5px);
+    // }
+    // .checker__label{
+    //   @include wh(200px, 40.5px);
   
-    }
-    .g-recaptcha{
-      position: relative;
-      left: 150px;
-      margin-top: 23px;
-    } 
-    .nav {
-      position: absolute;
-      @include wh(40px,100%);
-      margin-top: -61px;
-      background-color: #01134E;
-      z-index: 2;
-    }
-    .nav__logo{
-      visibility: hidden;
-    }
-    .header{
-      @include wh(100%,61px);
-      // max-width: 375px;
-    }
-    .header__wrapper{ 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-left: 10%;
-    }
+    // }
+    // .g-recaptcha{
+    //   position: relative;
+    //   left: 150px;
+    //   margin-top: 23px;
+    // } 
+    // .nav {
+    //   position: absolute;
+    //   @include wh(40px,100%);
+    //   margin-top: -61px;
+    //   background-color: #01134E;
+    //   z-index: 2;
+    // }
+    // .nav__logo{
+    //   visibility: hidden;
+    // }
+    // .header{
+    //   @include wh(100%,61px);
+    //   // max-width: 375px;
+    // }
+    // .header__wrapper{ 
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: space-between;
+    //   margin-left: 10%;
+    // }
+    // // .form__login{
+    // //     font-size: 40%;
+    // //   }
+    // .fl-size{
+    //     font-size: 1.3em;
+    // }
+    
     // .formProf{
     //   @include wh(900px,572px);
     // }
@@ -97,7 +101,7 @@
     //   left: 31%;
     // }
   
-  }
+}
   
 //   @media (max-width:920px){
 //     body{

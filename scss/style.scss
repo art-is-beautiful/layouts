@@ -2,7 +2,6 @@
 @import "_mixins.scss";
 @import "_variables.scss";
 @import "_templeates.scss";
-@import "_media.scss";
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
@@ -176,12 +175,15 @@ body{
 }
 
 .checker{
-  @include wh(700px,700px);
+  // @include wh(1000px,320px);
   @extend %pacenter;
+
   text-align: center;
 
   &__wrapper{
-    padding: 10em 0;
+    // padding: 10em 0;
+    // @extend %pacenter;
+    // width: auto;
   }
 
   &__text{
@@ -190,6 +192,8 @@ body{
   }
 
   .ellipse{
+    position: absolute;
+    // margin: auto 0;
     @extend %pacenter;
     z-index: -1;
   }
@@ -602,10 +606,7 @@ body{
 }
 
 
-.fl-size{
-  @include fwfsls(600,50px,0.4px);
-  margin-top: 23px;
-}
+
 
 .mx-12em{
 width: 12em;
@@ -648,6 +649,10 @@ margin-top: 0.9em;
 .text-trans-lower{
   text-transform:lowercase;
 }
+.fl-size{
+  @include fwfsls(600,3.15em,0.4px);
+  margin-top: 23px;
+}
 
 .headerProf__active-personal{
   position: absolute;
@@ -659,3 +664,4 @@ margin-top: 0.9em;
   top: 6.9em;
   right: 0em;
 }
+@import "_media.scss";
