@@ -314,7 +314,9 @@ body {
     height: 40.5px;
     border: 2px solid #F2F2F2;
     border-radius: 2px;
-    margin-top: 23px; }
+    margin-top: 23px;
+    padding: 6px 8px 6px 8px;
+    font-size: 0.85em; }
   .form__forgot {
     font-family: "Roboto";
     font-weight: 400;
@@ -336,7 +338,9 @@ body {
     font-size: 16px;
     letter-spacing: 0.4px;
     color: #FFFFFF;
-    background-color: #0AD69C; }
+    background-color: #0AD69C;
+    border: none;
+    border-radius: 2px; }
   .form .input__wrapper {
     width: 400px;
     height: 40.5px;
@@ -473,13 +477,16 @@ body {
     height: 40.5px;
     border: 2px solid #F2F2F2;
     background-color: #FCFCFC;
-    padding: 6px 6px 6px 6px; }
+    font-size: 0.85em;
+    padding: 6px 8px 6px 8px; }
   .formProf__input-mobile {
     width: 192px;
     height: 40.5px;
     border: 2px solid #F2F2F2;
     background-color: #FCFCFC;
-    margin-left: 4px; }
+    margin-left: 4px;
+    font-size: 0.85em;
+    padding: 6px 8px 6px 8px; }
   .formProf__input-text {
     font-family: "Roboto";
     font-weight: 500;
@@ -541,9 +548,11 @@ body {
     letter-spacing: 0.4px;
     color: #FFFFFF;
     background-color: #0AD69C;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px; }
   .formProf__header-results {
-    width: 680px;
+    width: 720px;
     display: flex;
     justify-content: space-between; }
   .formProf__header-showMap {
@@ -592,7 +601,9 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 30px;
-    width: 700px; }
+    width: 720px;
+    overflow-y: auto;
+    overflow-x: hidden; }
   .formProf__content-card {
     width: 330px;
     height: 128px;
@@ -601,7 +612,8 @@ body {
     box-sizing: border-box;
     box-shadow: -2px 9px 30px rgba(23, 31, 76, 0.02);
     border-radius: 2px;
-    margin-bottom: 18px; }
+    margin-bottom: 18px;
+    margin-right: 10px; }
   .formProf__card-img {
     border-radius: 50%;
     width: 5em;
@@ -651,7 +663,9 @@ body {
     display: flex;
     align-self: center;
     border: none;
-    background-color: #FFFFFF; }
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 2px; }
   .formProf__header-search {
     border: none;
     color: #252F48; }
@@ -664,6 +678,9 @@ body {
     box-shadow: -2px 9px 8px rgba(23, 31, 76, 0.03);
     border-radius: 4px;
     margin: 1.5em 0 0 3em; }
+  .formProf__table-content-wrapper {
+    height: 87%;
+    overflow-y: auto; }
   .formProf__table-main {
     width: 100%;
     height: 42px;
@@ -689,6 +706,7 @@ body {
     font-weight: 300;
     font-size: 14px;
     letter-spacing: 0.6px;
+    font-style: normal;
     text-align: center; }
   .formProf .wrapper_admin-select {
     width: 150px;

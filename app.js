@@ -21,27 +21,8 @@ const render = views(path.join(__dirname, '/pug'), {
 app.use(render);
 app.use(serve(path.join(__dirname, '/dist')));
 
-// Sign In
 router.use('/', globalRouter.router1.routes());
-router.use('/', globalRouter.router2.routes());
-router.use('/', globalRouter.router3.routes());
-router.use('/', globalRouter.router4.routes());
 
-//Sign Up
-router.use('/', globalRouter.router5.routes());
-router.use('/', globalRouter.router6.routes());
-router.use('/', globalRouter.router7.routes());
-
-//Profile
-router.use('/', globalRouter.router8.routes());
-router.use('/', globalRouter.router9.routes());
-
-//Search
-router.use('/', globalRouter.router10.routes());
-router.use('/', globalRouter.router11.routes());
-
-//Admin
-router.use('/', globalRouter.router12.routes());
 
 app.use(router.routes());
 
