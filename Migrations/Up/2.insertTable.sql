@@ -1,0 +1,3 @@
+START TRANSACTION;
+INSERT INTO category(categoryy) VALUES('One');
+COMMIT;

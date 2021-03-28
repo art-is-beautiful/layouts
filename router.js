@@ -17,6 +17,11 @@ router1.get('7', controllers.signup3);
 
 //Profile
 router1.get('8', controllers.profile1);
+router1.post('8', controllers.createUser);
+// router1.get('8/delete', controllers.profile1);
+router1.delete('8/:userId', controllers.deleteUser);
+router1.put('8', controllers.updateUser);
+router1.get('8/:userId', controllers.getOneUser);
 router1.get('9', controllers.profile2);
 
 //Search
