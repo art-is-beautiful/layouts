@@ -4,12 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./app.js",
-    "build-css": "node-sass --output dist/css scss",
-    "watchNode": "nodemon",
-    "serve": "nodemon server.js",
-    "build": "webpack serve",
-    "build:prod": "webpack"
+    "start": "node ./app.js"
   },
   "author": "Artem Chornyi",
   "license": "ISC",
