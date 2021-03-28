@@ -61,7 +61,7 @@ async function createUser(ctx) {
 
   const category = { ...createUserResponse.rows[0] };
 
-  await ctx.redis.set(category.num, JSON.stringify(category));
+  // await ctx.redis.set(category.num, JSON.stringify(category));
 
   ctx.status = 201;
   ctx.body = {
@@ -83,7 +83,7 @@ async function deleteUser(ctx) {
   //   "message": "Deleted",
   // }
 
-  await ctx.redis.set(category.num, JSON.stringify(category));
+  // await ctx.redis.set(category.num, JSON.stringify(category));
 
   ctx.status = 201;
   ctx.body = {
@@ -100,7 +100,7 @@ async function updateUser(ctx) {
 
   const category = { ...createUserResponse.rows[0] };
 
-  await ctx.redis.set(category.num, JSON.stringify(category));
+  // await ctx.redis.set(category.num, JSON.stringify(category));
 
   ctx.status = 201;
   ctx.body = {
@@ -118,7 +118,7 @@ async function getOneUser(ctx) {
 
   const category = { ...createUserResponse.rows[0] };
 
-  await ctx.redis.set(category.num, JSON.stringify(category));
+  // await ctx.redis.set(category.num, JSON.stringify(category));
 
   ctx.status = 201;
   ctx.body = {

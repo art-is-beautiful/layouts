@@ -10,9 +10,9 @@ const globalRouter = require('./router');
 
 const app = new Koa();
 
-const redis = new Redis('redis://localhost:6379');
+// const redis = new Redis('redis://localhost:6379');
 
-app.context.redis = redis;
+// app.context.redis = redis;
 
 app.use(bodyParser());
 app.use(async (ctx, next) => {
