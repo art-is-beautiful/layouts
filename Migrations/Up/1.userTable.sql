@@ -4,3 +4,13 @@ CREATE TABLE category (
     categoryy VARCHAR NOT NULL
 );
 COMMIT;
+
+-- START TRANSACTION;
+-- CREATE TABLE users (
+--     id SERIAL PRIMARY KEY,
+--     fname VARCHAR NOT NULL,
+-- 	lname VARCHAR NOT NULL,
+-- 	email VARCHAR NOT NULL,
+-- 	mypassword VARCHAR NOT NULL
+-- );
+-- COMMIT;

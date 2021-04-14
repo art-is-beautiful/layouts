@@ -8,12 +8,11 @@ class Database {
       database: 'osktcnby',
       password: 's-MJo7yYrvn3QbCmpWDjQQWmABWxpJRw',
       port: 5432,
-      // user: 'nypjrcadaffhyg',
-      // host: 'ec2-54-72-155-238.eu-west-1.compute.amazonaws.com',
-      // database: 'd49mpm27ep1g42',
-      // password: '3dabf8661dec8c0703ce71c411a6cb80ed4af86b4d4e8d20182b886d59ff9c37',
+      // user: 'artem',
+      // host: 'localhost',
+      // database: 'homework',
+      // password: '0606',
       // port: 5432,
-      // ssl: true,
     };
 
     this.pool = new Pool(this.config);

@@ -57,16 +57,15 @@ async function createUser(ctx) {
 
   await validator.schema.validateAsync(body);
 
-  const createUserResponse = await db.query(`INSERT INTO "category" (categoryy) VALUES ('${body.categoryy}') RETURNING *`);
+  const createUserResponse = await db.query(`INSERT INTO "users" (fname, lname, username, email, mypassword) VALUES ('${body.fname}', '${body.lname}', '${body.username}', '${body.email}', '${body.mypassword}') RETURNING *`);
 
-  const category = { ...createUserResponse.rows[0] };
+  const user = { ...createUserResponse.rows[0] };
 
   // await ctx.redis.set(category.num, JSON.stringify(category));
 
   ctx.status = 201;
   ctx.body = {
-    num: category.num,
-    categoryy: category.categoryy,
+    user
   };
 }
 
@@ -116,11 +115,12 @@ async function getOneUser(ctx) {
 
   const createUserResponse = await db.query(`SELECT * FROM category WHERE num = ${userId}`);
 
-  const category = { ...createUserResponse.rows[0] };
+  // const category = { ...createUserResponse.rows[0] };
+  const category = createUserResponse.rows[0];
 
   // await ctx.redis.set(category.num, JSON.stringify(category));
 
-  ctx.status = 201;
+  // ctx.status = 200;
   ctx.body = {
     num: category.num,
     categoryy: category.categoryy,
